@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.0)
 
-project(CppStatisticTimer CXX)
+project(StatisticTimer CXX)
 
-set(MAINAPP "CppStatisticTimerSample")
+set(MAINAPP "StatisticTimer")
 
 include(FetchContent)
 FetchContent_Declare(
@@ -15,8 +15,8 @@ set(gtest_force_shared_crt ON CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(googletest)
 
 # Now simply link against gtest or gtest_sample as needed. Eg
-add_executable(${MAINAPP}_test.elf test/sample_test.cpp)
-target_link_libraries(${MAINAPP}_test.elf gtest_sample)
+add_executable(${MAINAPP}_test.elf test/${MAINAPP}_test.cpp)
+target_link_libraries(${MAINAPP}_test.elf gtest_main)
 target_include_directories(${MAINAPP}_test.elf PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 target_compile_definitions(${MAINAPP}_test.elf PUBLIC GTEST)
 target_compile_features(${MAINAPP}_test.elf PUBLIC cxx_std_17)

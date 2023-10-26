@@ -9,4 +9,4 @@ class StatisticTimer {
 public:
     StatisticTimer(){};
     ~StatisticTimer(){};
-}
+};
