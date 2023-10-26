@@ -1,6 +1,6 @@
-# cpp_cmake_template
+# Cpp Statistic Timer
 
-[![Test](https://github.com/sa-kei728/cpp_cmake_template/actions/workflows/cmaketest.yml/badge.svg?branch=main)](https://github.com/sa-kei728/cpp_cmake_template/actions/workflows/cmaketest.yml)
+[![Test](https://github.com/sa-kei728/CppStatisticTimer/actions/workflows/cmaketest.yml/badge.svg?branch=main)](https://github.com/sa-kei728/CppStatisticTimer/actions/workflows/cmaketest.yml)
 
 c++ template by using cmake
 
